@@ -1,0 +1,50 @@
+{
+  "tree": {
+    "anchorX": 175.5,
+    "anchorY": 432,
+    "supportHalf": 69.5,
+    "frame": 0
+  },
+  "palm": {
+    "anchorX": 125.5,
+    "anchorY": 432,
+    "supportHalf": 65.5,
+    "frame": 1
+  },
+  "mushroom": {
+    "anchorX": 195.5,
+    "anchorY": 431,
+    "supportHalf": 88.5,
+    "frame": 2
+  },
+  "snowman": {
+    "anchorX": 186.0,
+    "anchorY": 432,
+    "supportHalf": 76.0,
+    "frame": 3
+  },
+  "flowers": {
+    "anchorX": 189.0,
+    "anchorY": 432,
+    "supportHalf": 60.0,
+    "frame": 4
+  },
+  "shell": {
+    "anchorX": 192.0,
+    "anchorY": 432,
+    "supportHalf": 50.0,
+    "frame": 5
+  },
+  "hedgehog": {
+    "anchorX": 172.0,
+    "anchorY": 432,
+    "supportHalf": 66.0,
+    "frame": 6
+  },
+  "penguin": {
+    "anchorX": 159.0,
+    "anchorY": 432,
+    "supportHalf": 41.0,
+    "frame": 7
+  }
+}

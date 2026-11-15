@@ -1,0 +1,15 @@
+node_modules/
+.vite/
+*.log
+
+/node_modules
+/test-results/*
+!/test-results/physics-v2.json
+!/test-results/physics-v3.json
+!/test-results/render-v2.json
+!/test-results/render-v3.json
+
+.env
+.env.*
+!.env.example
+.DS_Store

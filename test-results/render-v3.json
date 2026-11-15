@@ -1,0 +1,75 @@
+{
+  "type": "Node Canvas render (not browser)",
+  "snapshots": [
+    {
+      "name": "v3-world-1",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2471450
+    },
+    {
+      "name": "v3-world-2",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 3064193
+    },
+    {
+      "name": "v3-world-3",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2389084
+    },
+    {
+      "name": "v3-world-4",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2432580
+    },
+    {
+      "name": "v3-trampoline-ground",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2420608
+    },
+    {
+      "name": "v3-high-trampoline",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2766012
+    },
+    {
+      "name": "v3-water-left",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2427964
+    },
+    {
+      "name": "v3-water-center",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2364012
+    },
+    {
+      "name": "v3-palm",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2367292
+    },
+    {
+      "name": "v3-flag-crab",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2391191
+    }
+  ],
+  "characters": 3,
+  "atlas": [
+    3072,
+    448
+  ],
+  "highJump": {
+    "worldY": -80.1875,
+    "cameraY": -240.23649864914853,
+    "starsCollected": 2
+  }
+}

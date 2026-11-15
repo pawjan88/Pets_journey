@@ -1,0 +1,8 @@
+{
+  "name": "zwierzaczkowa-przygoda",
+  "productName": "Zwierzaczkowa Przygoda",
+  "version": "3.0.0",
+  "main": "main.cjs",
+  "private": true,
+  "description": "Łagodna platformówka offline dla dzieci."
+}

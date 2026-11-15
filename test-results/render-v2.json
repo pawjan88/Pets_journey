@@ -1,0 +1,51 @@
+{
+  "type": "Node Canvas render (not browser)",
+  "snapshots": [
+    {
+      "name": "v2-world-1",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2377903
+    },
+    {
+      "name": "v2-world-2",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2857781
+    },
+    {
+      "name": "v2-world-3",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2493196
+    },
+    {
+      "name": "v2-world-4",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2362153
+    },
+    {
+      "name": "v2-trampoline-ground",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2621102
+    },
+    {
+      "name": "v2-high-trampoline",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2779482
+    }
+  ],
+  "characters": 3,
+  "atlas": [
+    3072,
+    448
+  ],
+  "highJump": {
+    "worldY": -52.1875,
+    "cameraY": -214.24196022451514,
+    "starsCollected": 3
+  }
+}

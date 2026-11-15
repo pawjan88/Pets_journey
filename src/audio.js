@@ -1,0 +1,13 @@
+import {THEMES} from './config.js';
+// Original synthesized music. Nothing is downloaded at runtime.
+export class AudioSystem {
+ constructor(store){this.store=store;this.context=null;this.world=0;this.sequence=0;this.next=0;this.active=false;this.events={};this.musicNodes=[];}
+ unlock(){if(!this.context){this.context=new(window.AudioContext||window.webkitAudioContext)();this.master=this.context.createGain();this.master.gain.value=.7;this.master.connect(this.context.destination);}if(this.context.state==='suspended')this.context.resume();}
+ note(freq,time,duration,volume,type='sine',music=false){if(!this.context)return;const ctx=this.context,o=ctx.createOscillator(),g=ctx.createGain();o.type=type;o.frequency.setValueAtTime(freq,time);g.gain.setValueAtTime(0,time);g.gain.linearRampToValueAtTime(volume,time+.025);g.gain.exponentialRampToValueAtTime(.0001,time+duration);o.connect(g);g.connect(this.master);o.start(time);o.stop(time+duration+.03);if(music){this.musicNodes.push({o,g});o.onended=()=>{this.musicNodes=this.musicNodes.filter(n=>n.o!==o);};}}
+ stopMusic(){for(const {g,o}of this.musicNodes){try{g.gain.cancelScheduledValues(this.context.currentTime);g.gain.setTargetAtTime(.0001,this.context.currentTime,.02);o.stop(this.context.currentTime+.1);}catch{}}this.musicNodes=[];}
+ setActive(active,world=this.world){if(this.world!==world||!active)this.stopMusic();if(this.world!==world||this.active!==active){this.sequence=0;this.next=0;}this.world=world;this.active=active;}
+ update(){if(!this.context||!this.active||!this.store.data.settings.musicOn)return;const ctx=this.context;if(!this.next)this.next=ctx.currentTime+.08;if(this.next<ctx.currentTime-.1)this.next=ctx.currentTime+.08;const volume=this.store.data.settings.music*.11;
+ while(this.next<ctx.currentTime+.18){const w=this.world,n=this.sequence%32,notes=THEMES[w].notes,base=[60,57,62,60][w];const melody=base+notes[Math.floor(n/2)%notes.length];if(n%2===0)this.note(440*2**((melody-69)/12),this.next,1.1,volume,'sine',true);if(n%8===0)for(const semitone of [0,7,12])this.note(440*2**((base-24+semitone-69)/12),this.next,3.2,volume*.35,'triangle',true);this.next+=.42;this.sequence++;}}
+ effect(name){this.events[name]=(this.events[name]||0)+1;if(!this.context||!this.store.data.settings.sfxOn)return;const t=this.context.currentTime,v=this.store.data.settings.sfx*.14;
+ const patterns={jump:[330,440],coin:[880,1174],star:[523,659,784,1046],spring:[220,330,660],checkpoint:[440,554,659],finish:[523,659,784,1046,784,1046],click:[600],rescue:[392,523],safe:[659],surprise:[784,988]};const notes=patterns[name]||[];notes.forEach((f,i)=>this.note(f,t+i*.09,name==='finish'?.6:.26,v,'sine'));}
+}

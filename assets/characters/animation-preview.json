@@ -1,0 +1,18 @@
+{
+  "states": [
+    "idle",
+    "walk",
+    "jump",
+    "fall",
+    "land",
+    "collect",
+    "happy"
+  ],
+  "frameWidth": 160,
+  "frameHeight": 160,
+  "columns": 8,
+  "anchor": [
+    0.53125,
+    0.8875
+  ]
+}

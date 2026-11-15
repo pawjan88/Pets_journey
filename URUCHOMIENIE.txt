@@ -1,0 +1,18 @@
+ZWIERZACZKOWA PRZYGODA
+
+Najprościej: otwórz Zwierzaczkowa-Przygoda.html w aktualnym Edge lub Chrome.
+Wersja Windows: rozpakuj całe archiwum Windows i uruchom EXE w folderze.
+
+Sterowanie: ← → ruch, spacja skok, Esc pauza.
+Naciśnij strzałkę, puść ją, potem naciśnij spację. Lisek zapamiętuje kierunek.
+Przytrzymanie spacji nie wywołuje kolejnych skoków.
+
+Postępy zapisują się automatycznie. Kopię można zapisać w Ustawieniach.
+Nie ma przegranej ani limitu czasu. Monety i gwiazdki są opcjonalne.
+
+Gra ma cztery kompletne światy. Render FullHD 1920×1080.
+Wykonana z Game Studio i Phaser. Grafika 2D o wyglądzie stylizowanego renderu 3D.
+
+W tej sesji nie uruchomiono EXE na Windows. Polityka przeglądarki środowiska
+blokuje file://, więc plik wynikowy przetestowano przez lokalny serwer.
+Szczegóły: README.md i RAPORT_TESTOW.md.

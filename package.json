@@ -1,0 +1,25 @@
+{
+  "name": "zwierzaczkowa-przygoda",
+  "version": "3.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build && node tools/embed-licenses.cjs",
+    "test": "node tests/physics.mjs",
+    "test:render": "node tests/render.mjs",
+    "test:browser": "node tests/browser.cjs"
+  },
+  "description": "Pełna platformówka Phaser 2D offline zrealizowana z Game Studio",
+  "dependencies": {
+    "phaser": "^3.90.0",
+    "vite": "^6.4.1",
+    "vite-plugin-singlefile": "^2.3.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "playwright": "^1.62.1"
+  },
+  "engines": {
+    "node": ">=20.19"
+  }
+}

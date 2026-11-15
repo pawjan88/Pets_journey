@@ -1,0 +1,325 @@
+{
+  "checks": 36,
+  "tests": [
+    "Prędkość dokładnie +20%, wysoki skok z trampoliny",
+    "4 światy: 40+3, 3 flagi przy przepaściach i przewaga platform w powietrzu",
+    "Podwójna dziura ma bezpieczną wysepkę i flagę przed nią",
+    "Wszystkie stopnie terenu mieszczą się w zwykłym skoku",
+    "Strzałka, puszczenie, spacja pamiętają obie strony",
+    "Strzałka i spacja razem też działają",
+    "Przytrzymanie spacji nie powoduje serii skoków",
+    "Coyote time 100 ms po krawędzi",
+    "Bufor skoku przed lądowaniem",
+    "Nie ma dodatkowego skoku w powietrzu",
+    "Pomoc przy lądowaniu nie przykleja do krawędzi",
+    "Ściany i granice świata zatrzymują gracza",
+    "Duża trampolina wybija pionowo bez strzałki i po łuku ze strzałką",
+    "Linia wysoko nad trampoliną jest zbieralna bez naciskania spacji",
+    "Ruchome platformy przenoszą postać stabilnie",
+    "Bańka wraca w 1,6 s i zachowuje wszystkie zbiory",
+    "Flagi aktywują się w kolejności i nie cofają",
+    "Kamera pokazuje wysokie skoki i pozostaje w granicach",
+    "Migracja starego zapisu zachowuje światy, ustawienia i znalezione gwiazdki",
+    "Zapis 40+3 i wybór zwierzątka wracają po odczycie",
+    "Uszkodzony lub niedostępny zapis nie zatrzymuje gry",
+    "Import i eksport nowych i starych zapisów",
+    "Zmiana postaci w pauzie nie resetuje pozycji ani zbiorów",
+    "Esc z wyboru zwierzaka otwartego z pauzy wraca do pauzy",
+    "Powtórka ma znowu 3 widoczne supergwiazdki, rekord pozostaje zapisany",
+    "Meta odblokowuje świat także bez zebrania gwiazdek",
+    "Zwykła i supergwiazdka uruchamiają właściwy dźwięk",
+    "Podstawy drzew i palm nie wiszą nad krawędzią ani dziurą",
+    "Nowe rekwizyty mają wspólne kotwice i wyznaczone powierzchnie lądowania",
+    "Wysokich drzew nie można ominąć zwykłym skokiem",
+    "Trampolina pozwala przeskoczyć oba wysokie drzewa lub palmy",
+    "Gwiazdy na tratwach podążają za ruchem platformy",
+    "Długa woda: ruchoma, statyczna, ruchoma, brzeg — dziewięć faz startowych",
+    "Upadek do długiej wody uruchamia bańkę i zachowuje zbiory",
+    "12 pełnych przejść: 4 światy × 3 zwierzaki, komplet 40+3 bez kombinacji klawiszy",
+    "Pełny menedżer gry: cztery mety, zapisy i kolejne odblokowania"
+  ],
+  "routes": [
+    {
+      "world": 1,
+      "character": "fox",
+      "seconds": 181.8,
+      "x": 23815.506595239778,
+      "jumps": 51,
+      "minY": -124.125,
+      "minCamera": -353.3124955076954,
+      "stars": 40,
+      "supers": 3,
+      "checkpoint": 3,
+      "missing": [],
+      "missingSuper": [],
+      "ferrySupports": [
+        "ferry-left",
+        "water-center",
+        "ferry-right"
+      ],
+      "springEvents": 2
+    },
+    {
+      "world": 2,
+      "character": "fox",
+      "seconds": 181.80833333333334,
+      "x": 23815.366924155634,
+      "jumps": 51,
+      "minY": -124.125,
+      "minCamera": -353.3124955076954,
+      "stars": 40,
+      "supers": 3,
+      "checkpoint": 3,
+      "missing": [],
+      "missingSuper": [],
+      "ferrySupports": [
+        "ferry-left",
+        "water-center",
+        "ferry-right"
+      ],
+      "springEvents": 2
+    },
+    {
+      "world": 3,
+      "character": "fox",
+      "seconds": 181.79166666666666,
+      "x": 23815.277274133503,
+      "jumps": 51,
+      "minY": -124.125,
+      "minCamera": -353.3124955076954,
+      "stars": 40,
+      "supers": 3,
+      "checkpoint": 3,
+      "missing": [],
+      "missingSuper": [],
+      "ferrySupports": [
+        "ferry-left",
+        "water-center",
+        "ferry-right"
+      ],
+      "springEvents": 2
+    },
+    {
+      "world": 4,
+      "character": "fox",
+      "seconds": 181.80833333333334,
+      "x": 23815.366924155634,
+      "jumps": 51,
+      "minY": -124.125,
+      "minCamera": -353.3124955076954,
+      "stars": 40,
+      "supers": 3,
+      "checkpoint": 3,
+      "missing": [],
+      "missingSuper": [],
+      "ferrySupports": [
+        "ferry-left",
+        "water-center",
+        "ferry-right"
+      ],
+      "springEvents": 2
+    },
+    {
+      "world": 1,
+      "character": "rabbit",
+      "seconds": 181.8,
+      "x": 23815.506595239778,
+      "jumps": 51,
+      "minY": -124.125,
+      "minCamera": -353.3124955076954,
+      "stars": 40,
+      "supers": 3,
+      "checkpoint": 3,
+      "missing": [],
+      "missingSuper": [],
+      "ferrySupports": [
+        "ferry-left",
+        "water-center",
+        "ferry-right"
+      ],
+      "springEvents": 2
+    },
+    {
+      "world": 2,
+      "character": "rabbit",
+      "seconds": 181.80833333333334,
+      "x": 23815.366924155634,
+      "jumps": 51,
+      "minY": -124.125,
+      "minCamera": -353.3124955076954,
+      "stars": 40,
+      "supers": 3,
+      "checkpoint": 3,
+      "missing": [],
+      "missingSuper": [],
+      "ferrySupports": [
+        "ferry-left",
+        "water-center",
+        "ferry-right"
+      ],
+      "springEvents": 2
+    },
+    {
+      "world": 3,
+      "character": "rabbit",
+      "seconds": 181.79166666666666,
+      "x": 23815.277274133503,
+      "jumps": 51,
+      "minY": -124.125,
+      "minCamera": -353.3124955076954,
+      "stars": 40,
+      "supers": 3,
+      "checkpoint": 3,
+      "missing": [],
+      "missingSuper": [],
+      "ferrySupports": [
+        "ferry-left",
+        "water-center",
+        "ferry-right"
+      ],
+      "springEvents": 2
+    },
+    {
+      "world": 4,
+      "character": "rabbit",
+      "seconds": 181.80833333333334,
+      "x": 23815.366924155634,
+      "jumps": 51,
+      "minY": -124.125,
+      "minCamera": -353.3124955076954,
+      "stars": 40,
+      "supers": 3,
+      "checkpoint": 3,
+      "missing": [],
+      "missingSuper": [],
+      "ferrySupports": [
+        "ferry-left",
+        "water-center",
+        "ferry-right"
+      ],
+      "springEvents": 2
+    },
+    {
+      "world": 1,
+      "character": "hamster",
+      "seconds": 181.8,
+      "x": 23815.506595239778,
+      "jumps": 51,
+      "minY": -124.125,
+      "minCamera": -353.3124955076954,
+      "stars": 40,
+      "supers": 3,
+      "checkpoint": 3,
+      "missing": [],
+      "missingSuper": [],
+      "ferrySupports": [
+        "ferry-left",
+        "water-center",
+        "ferry-right"
+      ],
+      "springEvents": 2
+    },
+    {
+      "world": 2,
+      "character": "hamster",
+      "seconds": 181.80833333333334,
+      "x": 23815.366924155634,
+      "jumps": 51,
+      "minY": -124.125,
+      "minCamera": -353.3124955076954,
+      "stars": 40,
+      "supers": 3,
+      "checkpoint": 3,
+      "missing": [],
+      "missingSuper": [],
+      "ferrySupports": [
+        "ferry-left",
+        "water-center",
+        "ferry-right"
+      ],
+      "springEvents": 2
+    },
+    {
+      "world": 3,
+      "character": "hamster",
+      "seconds": 181.79166666666666,
+      "x": 23815.277274133503,
+      "jumps": 51,
+      "minY": -124.125,
+      "minCamera": -353.3124955076954,
+      "stars": 40,
+      "supers": 3,
+      "checkpoint": 3,
+      "missing": [],
+      "missingSuper": [],
+      "ferrySupports": [
+        "ferry-left",
+        "water-center",
+        "ferry-right"
+      ],
+      "springEvents": 2
+    },
+    {
+      "world": 4,
+      "character": "hamster",
+      "seconds": 181.80833333333334,
+      "x": 23815.366924155634,
+      "jumps": 51,
+      "minY": -124.125,
+      "minCamera": -353.3124955076954,
+      "stars": 40,
+      "supers": 3,
+      "checkpoint": 3,
+      "missing": [],
+      "missingSuper": [],
+      "ferrySupports": [
+        "ferry-left",
+        "water-center",
+        "ferry-right"
+      ],
+      "springEvents": 2
+    }
+  ],
+  "ferryPhases": [
+    {
+      "phase": 0,
+      "seconds": 13.225
+    },
+    {
+      "phase": 1,
+      "seconds": 12.208333333333334
+    },
+    {
+      "phase": 2,
+      "seconds": 25.208333333333332
+    },
+    {
+      "phase": 4,
+      "seconds": 23.208333333333332
+    },
+    {
+      "phase": 6,
+      "seconds": 21.208333333333332
+    },
+    {
+      "phase": 8,
+      "seconds": 19.208333333333332
+    },
+    {
+      "phase": 10,
+      "seconds": 17.208333333333332
+    },
+    {
+      "phase": 12,
+      "seconds": 15.225
+    },
+    {
+      "phase": 13.5,
+      "seconds": 13.708333333333334
+    }
+  ],
+  "notes": [
+    "Actual Node simulation; one action at a time; no teleportation in full routes.",
+    "Browser QA not performed: managed Sites cua_repl.js unavailable."
+  ]
+}
